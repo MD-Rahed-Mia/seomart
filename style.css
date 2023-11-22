@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100%;
+}
+.navbar {
+  padding: 0.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  min-height: 80px;
+}
+.navbar img {
+  width: 120px;
+}
+
+.nav_menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.nav_menu ul li {
+  list-style-type: none;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.nav_menu ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: #008b8b;
+  transition: width 0.6s;
+}
+.nav_menu ul li:hover::before {
+  width: 100%;
+}
+.nav_menu ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #4c566a;
+}
+
+.header_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 450px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.headerbox_left {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.headerbox_left h1{
+  color: white;
+  font-weight: 500;
+}
+.headerbox_left p{
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 300;
+}
+
+.headerbox_left button{
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #4c566a;
+}
+.headerbox_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerbox_right img {
+  width: 200px;
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav_menu{
+    display: none;
+  }
+  .header_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerbox_left{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
