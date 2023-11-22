@@ -175,3 +175,54 @@
     order: 1;
   }
 }
+
+
+/* ------------------- our offer cards starts here---------------------*/
+
+.our_offers{
+  margin-top: 2rem;
+  padding: 3rem;
+}
+.our_offers h1 {
+  text-align: center;
+  color: #4c566a;
+}
+.ourffers_cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.ouroffer_card{
+  padding: 1rem;
+  background: #8fbcbb;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.ouroffer_card h3{
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.ouroffer_card p{
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.ouroffer_card img {
+  width: 150px;
+  height: 150px;
+}
+
+.ouroffer_card:first-child{
+  background: #b48ead;
+}
+
+.ouroffer_card:last-child{
+  background: #5c7cfa;
+}
