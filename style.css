@@ -32,6 +32,10 @@
   cursor: pointer;
   position: relative;
 }
+
+#menuBtn {
+  display: none;
+}
 .nav_menu ul li::before {
   content: "";
   position: absolute;
@@ -41,6 +45,7 @@
   height: 5px;
   background: #008b8b;
   transition: width 0.6s;
+  border-radius: 5px;
 }
 .nav_menu ul li:hover::before {
   width: 100%;
@@ -69,17 +74,17 @@
   justify-content: center;
   flex-direction: column;
 }
-.headerbox_left h1{
+.headerbox_left h1 {
   color: white;
   font-weight: 500;
 }
-.headerbox_left p{
+.headerbox_left p {
   font-size: 0.8rem;
   color: white;
   font-weight: 300;
 }
 
-.headerbox_left button{
+.headerbox_left button {
   padding: 0.5rem 1.5rem;
   margin-top: 2rem;
   border-radius: 3px;
@@ -98,19 +103,56 @@
   width: 200px;
 }
 
-
 @media screen and (max-width: 650px) {
+  #menuBtn {
+    display: block;
+    font-size: 2.5rem;
+    color: #0093e9;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
 
-  .navbar{
+  .menu_box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_menu ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
   }
 
-  .nav_menu{
-    display: none;
+  .nav_menu .active{
+    max-height: 700px;
   }
-  .header_box{
+
+  .nav_menu {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .nav_menu ul li {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: lightgray;
+    font-size: 1rem;
+  }
+
+  .header_box {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -120,9 +162,16 @@
     justify-content: center;
   }
 
-  .headerbox_left{
+  .headerbox_left {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  .headerbox_left{
+    order: 2;
+  }
+  .headerbox_right{
+    padding-top: 2rem;
+    order: 1;
   }
 }
