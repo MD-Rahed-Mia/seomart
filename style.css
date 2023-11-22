@@ -197,7 +197,7 @@
 
 .ouroffer_card{
   padding: 1rem;
-  background: #8fbcbb;
+  background: #ae3ec9;
   border-radius: 15px;
   text-align: center;
 }
@@ -220,7 +220,7 @@
 }
 
 .ouroffer_card:first-child{
-  background: #b48ead;
+  background: #7950f2;
 }
 
 .ouroffer_card:last-child{
