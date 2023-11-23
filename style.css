@@ -33,6 +33,31 @@
   position: relative;
 }
 
+.search_box {
+  width: 500px;
+  padding: 0 1.5rem;
+  border: 1px solid #343a40;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_box input{
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  color: #343a40;
+}
+
+.search_box span{
+  font-size: 1.5rem;
+  color: #343a40;
+  font-weight: bold;
+}
+
 #menuBtn {
   display: none;
 }
@@ -173,6 +198,12 @@
   .headerbox_right{
     padding-top: 2rem;
     order: 1;
+  }
+
+  .search_box {
+    margin: 1rem 1.5rem;
+    max-width: 400px;
+
   }
 }
 
