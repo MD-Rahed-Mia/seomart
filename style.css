@@ -226,3 +226,176 @@
 .ouroffer_card:last-child{
   background: #5c7cfa;
 }
+
+
+@media screen and (max-width: 650px) {
+  .ourffers_cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+}
+
+/* ------------------- why us starts from here---------------------*/
+
+.why_us{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.whyus_heading{
+  text-align: center;
+  color: #4c566a;
+}
+
+.whyus_heading h1{
+  padding: 12px 2.3rem;
+  width: fit-content;
+  border-bottom: 5px solid orangered;
+  margin: 10px auto;
+}
+
+.whyus_heading p {
+  text-transform: capitalize;
+}
+
+.whyus__cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  padding: 3rem;
+}
+
+.whyus_card{
+  background: whitesmoke;
+  min-height: 150px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.whyus_card img{
+  margin-top: 1rem;
+}
+
+.why_us p {
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 650px) {
+  .whyus__cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+}
+
+/* ------------------- why us ends here---------------------*/
+/* ------------------- our tools starts here---------------------*/
+
+.our_tools{
+  width: 100%;
+  padding: 3rem;
+}
+.our_tools__heading {
+  text-align: center;
+}
+
+
+.our_tools__heading h1{
+  padding: 12px 2.3rem;
+  width: fit-content;
+  border-bottom: 5px solid orangered;
+  margin: 10px auto;
+  color: #4c566a;
+}
+
+.our_tools__heading p{
+  font: 14px;
+  color: #4c566a;
+}
+
+.our_tools__cards{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ourtools_img{
+  width: 100%;
+  text-align: center;
+}
+.ourtools_img img {
+  width: 100px;
+  transition: 0.5s;
+}
+
+.our_tools_card{
+  background: whitesmoke;
+  border-radius: 20px;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: width 0.5s ease;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-basis: 2;
+  box-shadow: -2px -1px 2px rgba(0, 0, 0, 0.2), 2px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.ourtools_card_center button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  background: #0093e9;
+  margin-top: 1rem;
+}
+.ourtools_card_center{
+  padding: 1rem;
+  flex: 1;
+}
+
+.ourtools_card_center h4{
+  color: #4c566a;
+  font-weight:bold;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+}
+.our_tools_card:hover{
+  width: 600px;
+}
+.our_tools_card:hover .ourtools_card__content{
+  display: block;
+}
+
+.ourtools_card__content{
+  width: 200px;
+  background: lightblue;
+  height: 100%;
+  padding: 1rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex: 1;
+  display: none;
+}
+
+.ourtools_card__content li{
+  list-style-type: none;
+  text-align: left;
+  color: #4c566a;
+  font-weight: bold;
+  margin-top: 5px;
+}
